@@ -34,3 +34,12 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+
+
+1.Authentication
+2.Frontend (shadcn & tailwindcss)
+3.Backend(openAI API) (youtube api)
+4.Deploy to a vps(virtual private server)
+5.Github actions for CI/CD upon code push
+6.Link up domain name with ssl cert to vps.
