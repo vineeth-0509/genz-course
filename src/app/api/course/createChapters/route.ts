@@ -27,6 +27,8 @@ export async function POST(req: Request, res: Response) {
           "an array of chapters, each chapter should have a youtube_search_query and a chapter_title key in the JSON object",
       }
     );
+
+    
     console.log(output_units);
     return NextResponse.json(output_units);
   } catch (error) {
