@@ -27,10 +27,16 @@ export async function POST(req: Request, res: Response) {
           "an array of chapters, each chapter should have a youtube_search_query and a chapter_title key in the JSON object",
       }
     );
+    const imageSearchTerm = await strict_output(
+      "you are an AI capable of finding the most relevant image for a course",
+      `Please provide a good image search term for the title of a course about ${title}, This search term will be fed in to the unsplash API, so make sure it is a good search_term that will return good results`,
+      {
+        image_serach_term: " a good search term for the title of the course",
+      }
+    );
 
-    
     console.log(output_units);
-    return NextResponse.json(output_units);
+    return NextResponse.json({ output_units, imageSearchTerm });
   } catch (error) {
     if (error instanceof ZodError) {
       return new NextResponse("Invalid body", { status: 400 });
